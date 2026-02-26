@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Chahiye?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Job Chahiye?</div>
         <ul class="nav-links">
@@ -18,54 +18,32 @@
         </ul>
     </nav>
 
-
+    <!-- Hero Section -->
     <section class="hero">
         <h1>Find Your Dream Job</h1>
         <p>Search from thousands of opportunities</p>
 
         <div class="search-box">
-            <input type="text" placeholder="Skills, Designation">
-            <input type="text" placeholder="Location">
-            <button>Search</button>
+            <input type="text" id="searchInput" placeholder="Search by title, company or location">
+            <button id="searchBtn">Search</button>
         </div>
     </section>
 
-    <section class="categories">
-        <h2>Popular categories</h2>
-        <div class="category-grid">
-            <div class="category">IT Jobs</div>
-            <div class="category">Marketing</div>
-            <div class="category">Finance</div>
-            <div class="category">Design</div>
-            <div class="category">Sales</div>
-            <div class="category">Fresher Jobs</div>
-        </div>
+    <!-- Post Job Section -->
+    <section class="post-job">
+        <h2>Post a Job</h2>
+        <input type="text" id="jobTitle" placeholder="Job Title">
+        <input type="text" id="companyName" placeholder="Company Name">
+        <input type="text" id="jobLocation" placeholder="Location">
+        <button id="addJobBtn">Post Job</button>
     </section>
 
+    <!-- Jobs Section -->
     <section class="jobs">
         <h2>Featured Jobs</h2>
-
-        <div class="job-card">
-        <h3>Frontend Developer</h3>
-        <p>Company: Microsoft</p>
-        <p>Location: Bangalore</p>
-        <button>Apply</button>
-        </div>
-
-        <div class="job-card">
-        <h3>Backend Developer</h3>
-        <p>Company: Amazon</p>
-        <p>Location: Pune</p>
-        <button>Apply</button>
-        </div>
-
-        <div class="job-card">
-        <h3>UI/UX Designer</h3>
-        <p>Company: Adobe</p>
-        <p>Location: Chennai</p>
-        <button>Apply</button>
-        </div>
-
+        <div id="jobList"></div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
