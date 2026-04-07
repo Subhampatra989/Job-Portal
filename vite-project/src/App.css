@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #222;
+}
+
+.hero p {
+  color: #666;
+  margin-top: 10px;
+}
+
+.search-box {
+  margin-top: 25px;
+}
+
+.search-box input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background: #ff9800;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* POST JOB */
+.post-job {
+  background: white;
+  padding: 30px;
+  margin: 40px auto;
+  width: 60%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.post-job input {
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.post-job button {
+  padding: 10px 20px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* JOB LIST */
+.jobs {
+  width: 70%;
+  margin: auto;
+}
+
+.jobs h2 {
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  color: #1a73e8;
+}
+
+.job-card button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-btn {
+  background: green;
+  color: white;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
